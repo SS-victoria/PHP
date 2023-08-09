@@ -20,21 +20,12 @@ $regest = intval(readline('Ingrese Estatura:      '));
 $regpes = intval(readline('Ingrese Peso:          '));
 $regfum = strtolower(readline('Es fumador:        '));
 
-
-$nombre1   = $regnom;
-$nid1      = $regnid;
-$genero1   = $reggen;
-$edad1     = $regeda;
-$estatura1 = $regest;
-$peso1     = $regpes;
-$fuma1     = $regfum;
-
 echo "\n Buscar usuario \n";
 
-$busnom = strtolower(readline("Nombre onid de usuario:  "));
+$busnom = strtolower(readline("Nombre o nid de usuario:  "));
 
-if (($busnom==$nombre1)OR($busnom==$nid1)):
-    echo"El usuario $nombre1 tiene $edad1 años y es de genero $genero1.  ";
+if (($busnom==$regnom)OR($busnom==$regnid)):
+    echo"El usuario $regnom tiene $regeda años y es de genero $reggen.  ";
 
 endif;
 
